@@ -1,0 +1,9 @@
+#!/bin/sh
+command=`basename $0`
+case $command       in
+	xfind)  /usr/local/bin/www "http://crnvmc/FIND" $@;;
+	yellow) /usr/local/bin/www "http://crnvmc/FIND/yellow" $@;;
+	vmnews) /usr/local/bin/www "http://crnvmc/NEWS/vmnews" $@;;
+	sting)  /usr/local/bin/www "http://crnvmc/NEWS/sting" $@;;
+esac
+exit 0

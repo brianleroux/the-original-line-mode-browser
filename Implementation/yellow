@@ -1,0 +1,11 @@
+#!/bin/sh
+#	Script to invoke www starting at a particular document or index
+command=`basename $0`
+case $command       in
+	xfind)   www "http://crnvmc.cern.ch./FIND" $@;;
+	yellow)  www "http://crnvmc.cern.ch./FIND/yellow?" $@;;
+	vmnews)  www "http://crnvmc.cern.ch./NEWS/vmnews" $@;;
+	student) www "http://crnvmc.cern.ch./NEWS/student" $@;;
+	sting)   www "http://crnvmc.cern.ch./NEWS/sting" $@;;
+esac
+exit 0

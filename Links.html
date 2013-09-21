@@ -1,0 +1,27 @@
+<title>Hypertext Links</title>
+<h1>Links and Anchors</h1>
+A link is the connection between one piece of
+<a href=WhatIs.html>hypertext</a> and another.
+Contained within html files are anchors which hold the neccessary address 
+information to a destination point. 
+Using anchors it is possible to jump to other files aswell as a specific place 
+within a file.
+The structure of an anchor in an html file can contain "NAME=" and "HREF=".
+"NAME" refers to the location of that anchor in the file, so that it 
+can be reached by using another anchor. "HREF" gives the location of a file 
+to form a hypertext link with. 
+<p>For example in a file the following anchors may be found :-
+<xmp>   <A NAME = 6  HREF = #13>   </A>     
+
+        <A NAME = 13>              </A>
+
+        <A HREF = #6>              </A>
+</xmp>
+<p>The first anchor indicates that it is anchor number 6 in the file and that
+if this anchor is selected it can perform the link to anchor number 13 in the 
+same file.
+<p>The second anchor just states that it is anchor number 13.
+<p>The third anchor can perform the link to the anchor number 6 in the file.
+<p>The "#" indicates a link contained within the same file.
+<p>If an HREF does not have a '#' in the address of the destination, the link is
+performed to the top of the file given.

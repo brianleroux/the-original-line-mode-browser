@@ -1,0 +1,62 @@
+(ld):
+halt 4
+(ld):
+insert /lib/crt0.o 
+(ld):
+insert www.o 
+(ld):
+insert HTParse.o 
+(ld):
+insert HTAccess.o 
+(ld):
+insert HTTP.o 
+(ld):
+insert HTFile.o 
+(ld):
+insert HTFTP.o 
+(ld):
+insert HTTCP.o 
+(ld):
+insert HTBufferFile.o 
+(ld):
+insert HTFormatText.o 
+(ld):
+insert /lib/libc.a 
+0706-406 IMPORT_FILE: 2078 symbols imported.
+(ld):
+resolve
+0706-224 WARNING:  Duplicate symbol '.mcount'.
+		mcount.c     from /lib/libc.a[mcount.o]   
+	  Replaced by symbol from:
+		*NO TAG*     from /lib/crt0.o             
+0706-196 RESOLVE:  Kept 2678 of 2927 symbols.
+(ld):
+comprld
+0706-180 COMPRLD: Kept 1265 of 1265 relocation entries.
+(ld):
+gc
+0706-188 Number of symbols garbage collected: 2507 of 2678
+(ld):
+mismatch
+0706-294 No type mismatches detected.
+(ld):
+er full
+0706-297 No unresolved symbols detected.
+(ld):
+addgl /lib/glink.o
+0706-196 RESOLVE:  Kept 267 of 331 symbols.
+0706-371 ADDGL: 32 symbols processed.
+(ld):
+origin 0x200 0x0
+(ld):
+pad 512 512 512
+0706-143 The object file pad values are .text: 512  .data: 512  .loader: 512
+(ld):
+save 1L www 
+0706-760 CLEAN_SAVE:  section sizes = 33016+5168+7892 (000080F8+00001430+00001ED4 hex)
+0706-762 Size of TOC: 224 (0xE0 hex)
+(ld):
+rc
+0706-476 RC:  Highest return code was 0
+(ld):
+q

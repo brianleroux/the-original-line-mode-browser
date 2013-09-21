@@ -1,0 +1,57 @@
+.TH www 1 "version 0.6"
+.SH NAME
+www - WorldWideWeb wide area hypertext browser for dumb terminals
+.SH SYNOPSIS
+www [options...] [document_address [keyword...]]
+.SH ARGUMENTS
+If the document address is omitted, a default document is displayed.
+Keywords may only be given when the document_address refers to an index.
+.sp 1
+.SH OPTIONS
+.nf
+.fi
+.TP
+.B \-v
+Verbose mode: lots of commentary about communications with servers.
+.TP
+.B \-n
+Non-interactive mode: outputs the document to the standard output and exits.
+The user is not prompted.
+Suitable for generating plain text files from hypertext, or getting a copy
+of a remote document, etc.
+.TP
+.B \-pn
+Set page length to n lines (n is a decimal integer).
+If n is ommitted, suppress page formatting by assuming infinite page size.
+.TP
+.B \-a
+Suppress display of anchor reference numbers.
+.SH DESCRIPTION
+.B www
+is an information access program which can retrieve and display information from hypertext files, and from remote servers.  It provides a uniform view of data from many sources. Information is found by followig references, or by using a keyword search of an index.
+.sp 1
+All information can be found indirectly by following references from
+the default document.
+.sp 1
+.SH CUSTOMISATION
+You can make an alias "www xxxxxx" to point to a document or index which you frequently use. You can write your own hypertext home page, with references
+to documents and idexes you frequently use.
+.SH MORE INFORMATION
+The default page contains a reference to much more information about www,
+including help on commands, command line syntax, and background about the
+WorldWideWeb project and hypertext. You should read that instead of this man page. It is more complete and probably more up-to-date.
+If you have any comments or suggestions,
+please mail timbl@nxoc01.cern.ch.
+.SH BUGS
+This application does not open a user-specific home page even if one exists.
+.sp 1
+Text styles (spacing, etc) are fixed, and not user-defineable.
+.sp 1
+Access to network news articles is not included in this version.
+.sp 1
+Many more ideas and possible additions are mentioned in the on-line www documentation.
+.SH AUTHORS
+.nf
+v0.9	1990 Nicola Pellow, Tim Berners-Lee
+.fi
+

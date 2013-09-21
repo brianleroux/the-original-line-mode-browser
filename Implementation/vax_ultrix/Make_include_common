@@ -1,0 +1,23 @@
+#  Make WWW under ultrix with gcc
+#
+#CFLAGS = -I$(CMN) -I$(LM) -DDEBUG
+CFLAGS = -I$(CMN) -I$(LM) -g  -DDEBUG
+
+CC = gcc
+
+LFLAGS =
+
+CMN = ../../../Implementation/
+
+LM = ../
+
+# This directory:
+HERE = /userd/tbl/hypertext/WWW/LineMode/Defaults
+
+# The directory with the default home page in:
+DEFAULTS = userd/tbl/hypertext/WWW/LineMode/Defaults
+
+# Directory for installed binary:
+BINDIR = /usr/local/unix
+
+include $(LM)CommonMakefile
